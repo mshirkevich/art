@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="cmsmagazine" content="ca39d125c1197307aff2bcc10f36b889">
+    <link rel="stylesheet" href="css/jquery-ui.css" media="all" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" href="css/magnific-popup.css" media="all" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" media="all"
+        onload="if(media!='all')media='all'">
+    <link rel="stylesheet" href="css/style.css" media="all" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" href="css/style-media.css" media="all" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" href="css/fonts.css" media="all" onload="if(media!='all')media='all'">
+    <noscript>
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-media.css">
+        <link rel="stylesheet" href="css/fonts.css">
+    </noscript>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <title>Art - Выпускники</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrap container"><a class="header__logo" href="./"><img src="img/logo.svg" alt=""></a>
+            <div class="header__menuopen"><span></span></div>
+        </div>
+    </header>
+    <div class="m-menu">
+        <div class="m-menu__wrap container">
+            <div class="m-menu__top">
+                <div class="m-menu__right">
+                    <div class="m-menu__socials m-socials"><a class="m-socials__item" href="#"><svg width="28"
+                                height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <path
+                                        d="M18.3098 12.7415L12.1239 9.35682C11.7682 9.1622 11.3478 9.16947 10.9992 9.37604C10.6503 9.58283 10.4423 9.94812 10.4423 10.3536V17.0648C10.4423 17.4683 10.6491 17.8329 10.9956 18.04C11.1765 18.148 11.3771 18.2023 11.5781 18.2023C11.7622 18.2023 11.9468 18.1568 12.1166 18.0654L18.3027 14.739C18.6699 14.5414 18.8992 14.1597 18.9009 13.7425C18.9024 13.3253 18.6759 12.9418 18.3098 12.7415ZM12.0831 16.2205V11.2047L16.7063 13.7344L12.0831 16.2205Z"
+                                        fill="#FBC471" />
+                                    <path
+                                        d="M27.794 8.39603L27.7927 8.38321C27.769 8.15784 27.5329 6.1532 26.5584 5.13358C25.4319 3.9343 24.1549 3.7886 23.5407 3.71875C23.4899 3.71298 23.4433 3.70764 23.4017 3.70209L23.3528 3.69696C19.6511 3.4278 14.0608 3.39105 14.0049 3.39084L13.9999 3.39062L13.995 3.39084C13.9391 3.39105 8.34878 3.4278 4.61381 3.69696L4.56447 3.70209C4.52473 3.70743 4.48094 3.71234 4.4333 3.7179C3.82619 3.78796 2.56283 3.93387 1.43319 5.17651C0.505003 6.18524 0.236693 8.14694 0.209136 8.3674L0.205932 8.39603C0.197601 8.48981 0 10.7224 0 12.9637V15.0589C0 17.3003 0.197601 19.5328 0.205932 19.6268L0.207427 19.6409C0.231139 19.8627 0.466978 21.8306 1.43704 22.8506C2.49618 24.0097 3.83537 24.1631 4.55571 24.2456C4.66957 24.2586 4.76762 24.2697 4.83448 24.2815L4.89921 24.2904C7.0365 24.4938 13.7376 24.594 14.0217 24.5981L14.0303 24.5983L14.0388 24.5981C14.0948 24.5978 19.6849 24.5611 23.3865 24.2919L23.4354 24.2868C23.4822 24.2806 23.5348 24.2751 23.5924 24.2691C24.1961 24.205 25.4527 24.0719 26.5667 22.8461C27.4949 21.8372 27.7634 19.8755 27.7908 19.6552L27.794 19.6266C27.8023 19.5326 28.0001 17.3003 28.0001 15.0589V12.9637C27.9999 10.7224 27.8023 8.49002 27.794 8.39603ZM26.3591 15.0589C26.3591 17.1334 26.1779 19.2699 26.1608 19.466C26.0912 20.0062 25.8081 21.2474 25.3559 21.7389C24.6586 22.506 23.9423 22.5821 23.4194 22.6374C23.3562 22.644 23.2976 22.6505 23.2447 22.6571C19.6644 22.916 14.2851 22.9557 14.0373 22.9572C13.7594 22.9532 7.15634 22.8521 5.08421 22.6596C4.97804 22.6423 4.86332 22.6291 4.74241 22.6154C4.1291 22.5451 3.28957 22.449 2.644 21.7389L2.62883 21.7227C2.1845 21.2598 1.90957 20.0992 1.83971 19.4724C1.82668 19.3241 1.64083 17.1625 1.64083 15.0589V12.9637C1.64083 10.8916 1.82156 8.75748 1.83907 8.55731C1.92217 7.92093 2.21056 6.75497 2.644 6.28372C3.36263 5.49332 4.12035 5.40573 4.6215 5.34784C4.66935 5.34229 4.714 5.33716 4.75523 5.33182C8.38766 5.07162 13.8055 5.03296 13.9999 5.03146C14.1943 5.03275 19.6103 5.07162 23.2105 5.33182C23.2547 5.33737 23.303 5.34293 23.3549 5.34891C23.8704 5.40765 24.6494 5.49652 25.3644 6.25916L25.3711 6.2662C25.8154 6.72913 26.0903 7.91003 26.1602 8.54941C26.1726 8.68933 26.3591 10.8557 26.3591 12.9637V15.0589Z"
+                                        fill="#FBC471" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="28" height="28" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a><a class="m-socials__item" href="#"><svg width="28" height="28" viewBox="0 0 28 28"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.4206 0H7.57933C3.40002 0 0 3.40002 0 7.57933V20.4208C0 24.5999 3.40002 27.9999 7.57933 27.9999H20.4208C24.5999 27.9999 27.9999 24.5999 27.9999 20.4208V7.57933C27.9999 3.40002 24.5999 0 20.4206 0V0ZM26.3585 20.4208C26.3585 23.6948 23.6948 26.3585 20.4206 26.3585H7.57933C4.30514 26.3585 1.64148 23.6948 1.64148 20.4208V7.57933C1.64148 4.30514 4.30514 1.64148 7.57933 1.64148H20.4208C23.6948 1.64148 26.3585 4.30514 26.3585 7.57933V20.4208Z"
+                                    fill="#FBC471" />
+                                <path
+                                    d="M14 6.34375C9.77837 6.34375 6.34396 9.77816 6.34396 13.9998C6.34396 18.2214 9.77837 21.6558 14 21.6558C18.2216 21.6558 21.656 18.2214 21.656 13.9998C21.656 9.77816 18.2216 6.34375 14 6.34375ZM14 20.0143C10.6837 20.0143 7.98544 17.3163 7.98544 13.9998C7.98544 10.6835 10.6837 7.98523 14 7.98523C17.3165 7.98523 20.0145 10.6835 20.0145 13.9998C20.0145 17.3163 17.3165 20.0143 14 20.0143Z"
+                                    fill="#FBC471" />
+                                <path
+                                    d="M21.8391 3.62598C20.5915 3.62598 19.5768 4.6409 19.5768 5.88824C19.5768 7.1358 20.5915 8.15072 21.8391 8.15072C23.0866 8.15072 24.1015 7.1358 24.1015 5.88824C24.1015 4.64068 23.0866 3.62598 21.8391 3.62598ZM21.8391 6.50903C21.4968 6.50903 21.2183 6.23046 21.2183 5.88824C21.2183 5.5458 21.4968 5.26745 21.8391 5.26745C22.1815 5.26745 22.4601 5.5458 22.4601 5.88824C22.4601 6.23046 22.1815 6.50903 21.8391 6.50903Z"
+                                    fill="#FBC471" />
+                            </svg>
+                        </a><a class="m-socials__item" href="#"><svg width="28" height="28" viewBox="0 0 28 28"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <path
+                                        d="M15.8904 27.9453H11.3977C10.6473 27.9453 10.0368 27.3361 10.0368 26.5871V16.4733H7.41567C6.66524 16.4733 6.05479 15.8639 6.05479 15.1151V10.7813C6.05479 10.0324 6.66524 9.42313 7.41567 9.42313H10.0368V7.25293C10.0368 5.10111 10.7138 3.27036 11.9944 1.95892C13.2808 0.64151 15.0786 -0.0546875 17.1933 -0.0546875L20.6196 -0.0491333C21.3688 -0.0478516 21.9782 0.561401 21.9782 1.30908V5.33289C21.9782 6.08185 21.3679 6.6911 20.6177 6.6911L18.3108 6.69196C17.6072 6.69196 17.4281 6.83273 17.3898 6.87589C17.3266 6.94745 17.2515 7.14975 17.2515 7.70837V9.42291H20.4444C20.6847 9.42291 20.9176 9.48209 21.1177 9.5936C21.5494 9.83435 21.8179 10.2896 21.8179 10.7816L21.8161 15.1153C21.8161 15.8639 21.2057 16.4731 20.4553 16.4731H17.2515V26.5871C17.2515 27.3361 16.6408 27.9453 15.8904 27.9453ZM11.6815 26.3038H15.6066V15.7385C15.6066 15.2384 16.0143 14.8316 16.5152 14.8316H20.1714L20.1729 11.0646H16.515C16.0141 11.0646 15.6066 10.6579 15.6066 10.1578V7.70837C15.6066 7.06708 15.6719 6.33777 16.1569 5.78961C16.7429 5.12695 17.6665 5.05048 18.3104 5.05048L20.3335 5.04962V1.59192L17.192 1.58679C13.7935 1.58679 11.6815 3.75806 11.6815 7.25293V10.1578C11.6815 10.6577 11.274 11.0646 10.7731 11.0646H7.69949V14.8316H10.7731C11.274 14.8316 11.6815 15.2384 11.6815 15.7385V26.3038ZM20.6164 1.59235H20.6167H20.6164Z"
+                                        fill="#FBC471" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="28" height="28" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a></div>
+                    <div class="m-menu__menuclose"><svg width="26" height="21" viewBox="0 0 26 21" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <line x1="25.6464" y1="10.3536" x2="15.6464" y2="0.353554" stroke="#FBC471" />
+                            <line x1="15.6464" y1="20.6464" x2="25.6464" y2="10.6464" stroke="#FBC471" />
+                            <line y1="10.5" x2="26" y2="10.5" stroke="#FBC471" />
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+            <div class="m-menu__middle">
+                <nav class="s-menu">
+                    <a class="s-menu__item" href="./about.html">О школе</a>
+                    <a class="s-menu__item" href="./programs.html">Программы обучения</a>
+                    <a class="s-menu__item" href="./teachers.html">Преподаватели</a>
+                    <a class="s-menu__item" href="./graduates.html">Выпускники</a>
+                    <a class="s-menu__item" href="./events.html">Мероприятия</a>
+                    <a class="s-menu__item" href="./blog.html">Блог</a>
+                    <a class="s-menu__item" href="./news.html">Новости</a>
+                    <a class="s-menu__item" href="./contacts.html">Контакты</a>
+                </nav>
+            </div>
+            <div class="m-menu__bottom">
+                <div class="m-menu__info m-into">
+                    <div class="m-into__item"><svg width="7" height="18" viewBox="0 0 7 18" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.25098 8.92666C5.7567 8.42667 5.09209 8.1508 4.40268 8.15946C4.37367 8.15946 4.34515 8.15946 4.31663 8.15946C4.13028 7.3846 3.95474 6.74783 3.83526 6.33508C3.78609 6.16322 3.73692 5.99649 3.69562 5.8364C4.24288 5.21344 4.7331 4.61503 5.0055 4.0115C5.77747 2.30066 5.4264 1.28234 5.14859 0.827137C4.99528 0.571357 4.78127 0.360922 4.52714 0.216078C4.27302 0.0712345 3.98734 -0.00314297 3.69758 0.000101793C3.1513 0.000101793 2.69992 0.22668 2.39359 0.654774C1.79225 1.49511 1.78733 3.04944 2.38868 5.50241C1.23908 6.80255 0 8.27556 0 10.1086C0 12.045 1.01929 12.9948 1.87485 13.4511C2.43849 13.7443 3.05366 13.915 3.68283 13.9528H3.69758C3.81854 13.9528 3.93802 13.9477 4.05603 13.9375L4.05996 13.9983C4.11258 14.7855 4.1583 15.4652 4.05996 16.0585C3.96703 16.6242 3.59924 16.795 3.31258 16.7699C3.19162 16.7592 2.91086 16.6983 2.91086 16.3669H1.73078C1.73078 17.2333 2.35377 17.9171 3.21227 17.9933C3.26439 17.998 3.31701 18 3.36913 18C3.76518 18.0003 4.15057 17.8666 4.46709 17.619C4.86734 17.3065 5.12892 16.8385 5.22333 16.2661C5.34478 15.5271 5.29511 14.7793 5.23709 13.9134L5.2248 13.7257C5.2248 13.6996 5.22136 13.6746 5.21939 13.6475C5.48423 13.5327 5.73245 13.3801 5.95694 13.1943C6.63942 12.6266 6.99984 11.8133 6.99984 10.8416C7.00368 10.4862 6.93925 10.1336 6.81031 9.80455C6.68138 9.47545 6.49055 9.17646 6.24901 8.92512L6.25098 8.92666ZM3.34012 1.38821C3.39961 1.30484 3.48418 1.22761 3.69758 1.22761C3.78862 1.22516 3.87866 1.24776 3.95861 1.29311C4.03855 1.33846 4.10558 1.40497 4.1529 1.4859C4.24583 1.63934 4.50446 2.23212 3.93704 3.49032C3.81215 3.76651 3.60416 4.06776 3.35044 4.3864C2.93053 2.30475 3.18277 1.60814 3.34012 1.38821ZM3.70889 12.7253C3.24613 12.6912 2.79468 12.5607 2.3813 12.3417C1.57344 11.8972 1.18008 11.1669 1.18008 10.1086C1.18008 8.96553 1.93238 7.88634 2.76581 6.89973C2.88038 7.30634 3.02985 7.86537 3.18769 8.52413C2.67878 8.89597 2.43883 9.50205 2.43883 10.0795C2.43883 10.5444 2.62027 10.9418 2.9502 11.1975C3.19494 11.3786 3.48343 11.4848 3.78314 11.5044C3.84558 11.9023 3.90164 12.3074 3.94835 12.714C3.86771 12.7212 3.78756 12.7253 3.70889 12.7253ZM5.09155 12.3304C4.96568 11.3075 4.78571 10.302 4.59592 9.39925C5.31675 9.48722 5.82172 10.0672 5.82172 10.8431C5.82172 11.5592 5.51884 12.0353 5.09155 12.3304Z"
+                                fill="#FBC471" />
+                        </svg>
+                        <span>ООО “Артвокал”</span>
+                    </div>
+                    <div class="m-into__item"><svg width="12" height="18" viewBox="0 0 12 18" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M6.00049 0.666748C2.75033 0.666748 0.16687 3.25021 0.16687 6.50037C0.16687 10.8339 6.00049 17.3342 6.00049 17.3342C6.00049 17.3342 11.8341 10.9172 11.8341 6.50037C11.8341 3.25021 9.25065 0.666748 6.00049 0.666748ZM6.00055 8.58405C4.83379 8.58405 3.91705 7.66733 3.91705 6.50061C3.91705 5.33389 4.83379 4.41718 6.00055 4.41718C7.16731 4.41718 8.08405 5.33389 8.08405 6.50061C8.08405 7.66733 7.16731 8.58405 6.00055 8.58405Z"
+                                fill="#FBC471" />
+                        </svg>
+                        <span>г. Минск, ул Некрасова, 7, офис 414</span>
+                    </div>
+                </div>
+                <div class="m-menu__btns"><a class="m-btn popup" href="#feedback">Запись на прослушивание</a><a
+                        class="m-btn popup" href="#news">Подписаться на новости</a></div>
+                <div class="m-menu__contacts m-contacts">
+                    <div class="m-contacts__item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.33333 2.5C2.8725 2.5 2.5 2.8725 2.5 3.33333C2.5 11.1567 8.84333 17.5 16.6667 17.5C17.1275 17.5 17.5 17.1275 17.5 16.6667V13.75C17.5 13.29 17.1275 12.9175 16.6667 12.9175C15.6267 12.9175 14.6267 12.75 13.69 12.4433C13.6067 12.4167 13.5192 12.4033 13.4325 12.4033C13.22 12.4033 13.0067 12.485 12.8442 12.6475L11.01 14.4833C8.65 13.2833 6.72083 11.3542 5.51917 8.995L7.3525 7.15583C7.58167 6.9275 7.64917 6.59833 7.55667 6.31C7.25 5.3725 7.0825 4.3725 7.0825 3.33333C7.0825 2.8725 6.71 2.5 6.25 2.5H3.33333Z"
+                                fill="#FBC471" />
+                        </svg>
+                        <a href="tel:+375291670506">+375 29 167-05-06</a>
+                    </div>
+                    <div class="m-contacts__item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.33333 2.5C2.8725 2.5 2.5 2.8725 2.5 3.33333C2.5 11.1567 8.84333 17.5 16.6667 17.5C17.1275 17.5 17.5 17.1275 17.5 16.6667V13.75C17.5 13.29 17.1275 12.9175 16.6667 12.9175C15.6267 12.9175 14.6267 12.75 13.69 12.4433C13.6067 12.4167 13.5192 12.4033 13.4325 12.4033C13.22 12.4033 13.0067 12.485 12.8442 12.6475L11.01 14.4833C8.65 13.2833 6.72083 11.3542 5.51917 8.995L7.3525 7.15583C7.58167 6.9275 7.64917 6.59833 7.55667 6.31C7.25 5.3725 7.0825 4.3725 7.0825 3.33333C7.0825 2.8725 6.71 2.5 6.25 2.5H3.33333Z"
+                                fill="#FBC471" />
+                        </svg>
+                        <a href="tel:+375171234567">+375 17 123-45-67</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="breadcrumbs">
+            <div class="breadcrumbs__wrap container">
+                <div class="breadcrumbs__list">
+                    <div class="breadcrumbs__item"><a class="breadcrumbs__link" href="./">Главная</a></div>
+                    <div class="breadcrumbs__item"><span class="breadcrumbs__link">Выпускники</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="graduates">
+            <div class="graduates__wrap container">
+                <div class="graduates__title page-title">Выпускники нашей школы</div>
+                <div class="graduates__notes"><img src="img/horizontal-notes.svg" alt=""></div>
+                <div class="graduates__years years"><span>Выпуск:</span>
+                    <div class="years__item active"><a class="years__link" href="#">Все</a></div>
+                    <div class="years__item"><a class="years__link" href="#">2017</a></div>
+                    <div class="years__item"><a class="years__link" href="#">2018</a></div>
+                    <div class="years__item"><a class="years__link" href="#">2019</a></div>
+                </div>
+                <div class="graduates__list">
+                    <div class="el-graduate">
+                        <div class="el-graduate__photo"><img src="img/graduate.jpg" alt=""></div>
+                        <div class="el-graduate__body" style="background-image:url(img/prog-icon1.svg);">
+                            <div class="el-graduate__name">Богатова Екатерина Васильевна</div>
+                            <div class="el-graduate__info">
+                                <div class="el-graduate__info-item"><span>Окончила программу:</span>
+                                    <div class="value">Вокальное Искусство</div>
+                                </div>
+                                <div class="el-graduate__info-item"><span>Год выпуска:</span>
+                                    <div class="value">2018</div>
+                                </div>
+                            </div><a class="el-graduate__link" href="./kid.html"><span>Подробнее</span>
+                                <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12 4L10.6 5.4L16.2 11H4V13H16.2L10.6 18.6L12 20L20 12L12 4Z"
+                                            fill="#FBC471" />
+                                    </svg>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="el-graduate">
+                        <div class="el-graduate__photo"><img src="img/graduate.jpg" alt=""></div>
+                        <div class="el-graduate__body" style="background-image:url(img/prog-icon1.svg);">
+                            <div class="el-graduate__name">Богатова Екатерина Васильевна</div>
+                            <div class="el-graduate__info">
+                                <div class="el-graduate__info-item"><span>Окончила программу:</span>
+                                    <div class="value">Вокальное Искусство</div>
+                                </div>
+                                <div class="el-graduate__info-item"><span>Год выпуска:</span>
+                                    <div class="value">2018</div>
+                                </div>
+                            </div><a class="el-graduate__link" href="./kid.html"><span>Подробнее</span>
+                                <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12 4L10.6 5.4L16.2 11H4V13H16.2L10.6 18.6L12 20L20 12L12 4Z"
+                                            fill="#FBC471" />
+                                    </svg>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="el-graduate">
+                        <div class="el-graduate__photo"><img src="img/graduate.jpg" alt=""></div>
+                        <div class="el-graduate__body" style="background-image:url(img/prog-icon1.svg);">
+                            <div class="el-graduate__name">Богатова Екатерина Васильевна</div>
+                            <div class="el-graduate__info">
+                                <div class="el-graduate__info-item"><span>Окончила программу:</span>
+                                    <div class="value">Вокальное Искусство</div>
+                                </div>
+                                <div class="el-graduate__info-item"><span>Год выпуска:</span>
+                                    <div class="value">2018</div>
+                                </div>
+                            </div><a class="el-graduate__link" href="./kid.html"><span>Подробнее</span>
+                                <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12 4L10.6 5.4L16.2 11H4V13H16.2L10.6 18.6L12 20L20 12L12 4Z"
+                                            fill="#FBC471" />
+                                    </svg>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="el-graduate">
+                        <div class="el-graduate__photo"><img src="img/graduate.jpg" alt=""></div>
+                        <div class="el-graduate__body" style="background-image:url(img/prog-icon1.svg);">
+                            <div class="el-graduate__name">Богатова Екатерина Васильевна</div>
+                            <div class="el-graduate__info">
+                                <div class="el-graduate__info-item"><span>Окончила программу:</span>
+                                    <div class="value">Вокальное Искусство</div>
+                                </div>
+                                <div class="el-graduate__info-item"><span>Год выпуска:</span>
+                                    <div class="value">2018</div>
+                                </div>
+                            </div><a class="el-graduate__link" href="./kid.html"><span>Подробнее</span>
+                                <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12 4L10.6 5.4L16.2 11H4V13H16.2L10.6 18.6L12 20L20 12L12 4Z"
+                                            fill="#FBC471" />
+                                    </svg>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="el-graduate">
+                        <div class="el-graduate__photo"><img src="img/graduate.jpg" alt=""></div>
+                        <div class="el-graduate__body" style="background-image:url(img/prog-icon1.svg);">
+                            <div class="el-graduate__name">Богатова Екатерина Васильевна</div>
+                            <div class="el-graduate__info">
+                                <div class="el-graduate__info-item"><span>Окончила программу:</span>
+                                    <div class="value">Вокальное Искусство</div>
+                                </div>
+                                <div class="el-graduate__info-item"><span>Год выпуска:</span>
+                                    <div class="value">2018</div>
+                                </div>
+                            </div><a class="el-graduate__link" href="./kid.html"><span>Подробнее</span>
+                                <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12 4L10.6 5.4L16.2 11H4V13H16.2L10.6 18.6L12 20L20 12L12 4Z"
+                                            fill="#FBC471" />
+                                    </svg>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="el-graduate">
+                        <div class="el-graduate__photo"><img src="img/graduate.jpg" alt=""></div>
+                        <div class="el-graduate__body" style="background-image:url(img/prog-icon1.svg);">
+                            <div class="el-graduate__name">Богатова Екатерина Васильевна</div>
+                            <div class="el-graduate__info">
+                                <div class="el-graduate__info-item"><span>Окончила программу:</span>
+                                    <div class="value">Вокальное Искусство</div>
+                                </div>
+                                <div class="el-graduate__info-item"><span>Год выпуска:</span>
+                                    <div class="value">2018</div>
+                                </div>
+                            </div><a class="el-graduate__link" href="./kid.html"><span>Подробнее</span>
+                                <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12 4L10.6 5.4L16.2 11H4V13H16.2L10.6 18.6L12 20L20 12L12 4Z"
+                                            fill="#FBC471" />
+                                    </svg>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="el-graduate">
+                        <div class="el-graduate__photo"><img src="img/graduate.jpg" alt=""></div>
+                        <div class="el-graduate__body" style="background-image:url(img/prog-icon1.svg);">
+                            <div class="el-graduate__name">Богатова Екатерина Васильевна</div>
+                            <div class="el-graduate__info">
+                                <div class="el-graduate__info-item"><span>Окончила программу:</span>
+                                    <div class="value">Вокальное Искусство</div>
+                                </div>
+                                <div class="el-graduate__info-item"><span>Год выпуска:</span>
+                                    <div class="value">2018</div>
+                                </div>
+                            </div><a class="el-graduate__link" href="./kid.html"><span>Подробнее</span>
+                                <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12 4L10.6 5.4L16.2 11H4V13H16.2L10.6 18.6L12 20L20 12L12 4Z"
+                                            fill="#FBC471" />
+                                    </svg>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="el-graduate">
+                        <div class="el-graduate__photo"><img src="img/graduate.jpg" alt=""></div>
+                        <div class="el-graduate__body" style="background-image:url(img/prog-icon1.svg);">
+                            <div class="el-graduate__name">Богатова Екатерина Васильевна</div>
+                            <div class="el-graduate__info">
+                                <div class="el-graduate__info-item"><span>Окончила программу:</span>
+                                    <div class="value">Вокальное Искусство</div>
+                                </div>
+                                <div class="el-graduate__info-item"><span>Год выпуска:</span>
+                                    <div class="value">2018</div>
+                                </div>
+                            </div><a class="el-graduate__link" href="./kid.html"><span>Подробнее</span>
+                                <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12 4L10.6 5.4L16.2 11H4V13H16.2L10.6 18.6L12 20L20 12L12 4Z"
+                                            fill="#FBC471" />
+                                    </svg>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="el-graduate">
+                        <div class="el-graduate__photo"><img src="img/graduate.jpg" alt=""></div>
+                        <div class="el-graduate__body" style="background-image:url(img/prog-icon1.svg);">
+                            <div class="el-graduate__name">Богатова Екатерина Васильевна</div>
+                            <div class="el-graduate__info">
+                                <div class="el-graduate__info-item"><span>Окончила программу:</span>
+                                    <div class="value">Вокальное Искусство</div>
+                                </div>
+                                <div class="el-graduate__info-item"><span>Год выпуска:</span>
+                                    <div class="value">2018</div>
+                                </div>
+                            </div><a class="el-graduate__link" href="./kid.html"><span>Подробнее</span>
+                                <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12 4L10.6 5.4L16.2 11H4V13H16.2L10.6 18.6L12 20L20 12L12 4Z"
+                                            fill="#FBC471" />
+                                    </svg>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__wrap container">
+            <div class="footer__top"><a class="footer__logo" href="./"><img src="img/logo.svg"></a>
+                <div class="footer__middle">
+                    <div class="footer__menu f-menu"><span>О школе:</span>
+                        <div class="f-menu__list">
+                            <a class="f-menu__item" href="./programs.html">Программы</a>
+                            <a class="f-menu__item" href="./teachers.html">Преподователи</a>
+                            <a class="f-menu__item" href="./graduates.html">Выпускники</a>
+                        </div>
+                        <div class="f-menu__btn"><a class="m-btn popup" href="#order">Запись на прослушивание</a></div>
+                    </div>
+                    <div class="footer__menu f-menu"><span>Медиа:</span>
+                        <div class="f-menu__list">
+                            <a class="f-menu__item" href="./events.html">Мероприятия</a>
+                            <a class="f-menu__item" href="./news.html">Новости</a>
+                            <a class="f-menu__item" href="./blog.html">Блог</a>
+                        </div>
+                        <div class="f-menu__btn"><a class="m-btn popup" href="#news">Подписаться на новости</a></div>
+                    </div>
+                </div>
+                <div class="footer__contacts"><span>Подписывайтесь на нас:</span>
+                    <div class="footer__socials f-socials"><a class="f-socials__item" href="#"><svg width="28"
+                                height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <path
+                                        d="M18.3098 12.7415L12.1239 9.35682C11.7682 9.1622 11.3478 9.16947 10.9992 9.37604C10.6503 9.58283 10.4423 9.94812 10.4423 10.3536V17.0648C10.4423 17.4683 10.6491 17.8329 10.9956 18.04C11.1765 18.148 11.3771 18.2023 11.5781 18.2023C11.7622 18.2023 11.9468 18.1568 12.1166 18.0654L18.3027 14.739C18.6699 14.5414 18.8992 14.1597 18.9009 13.7425C18.9024 13.3253 18.6759 12.9418 18.3098 12.7415ZM12.0831 16.2205V11.2047L16.7063 13.7344L12.0831 16.2205Z"
+                                        fill="#FBC471" />
+                                    <path
+                                        d="M27.794 8.39603L27.7927 8.38321C27.769 8.15784 27.5329 6.1532 26.5584 5.13358C25.4319 3.9343 24.1549 3.7886 23.5407 3.71875C23.4899 3.71298 23.4433 3.70764 23.4017 3.70209L23.3528 3.69696C19.6511 3.4278 14.0608 3.39105 14.0049 3.39084L13.9999 3.39062L13.995 3.39084C13.9391 3.39105 8.34878 3.4278 4.61381 3.69696L4.56447 3.70209C4.52473 3.70743 4.48094 3.71234 4.4333 3.7179C3.82619 3.78796 2.56283 3.93387 1.43319 5.17651C0.505003 6.18524 0.236693 8.14694 0.209136 8.3674L0.205932 8.39603C0.197601 8.48981 0 10.7224 0 12.9637V15.0589C0 17.3003 0.197601 19.5328 0.205932 19.6268L0.207427 19.6409C0.231139 19.8627 0.466978 21.8306 1.43704 22.8506C2.49618 24.0097 3.83537 24.1631 4.55571 24.2456C4.66957 24.2586 4.76762 24.2697 4.83448 24.2815L4.89921 24.2904C7.0365 24.4938 13.7376 24.594 14.0217 24.5981L14.0303 24.5983L14.0388 24.5981C14.0948 24.5978 19.6849 24.5611 23.3865 24.2919L23.4354 24.2868C23.4822 24.2806 23.5348 24.2751 23.5924 24.2691C24.1961 24.205 25.4527 24.0719 26.5667 22.8461C27.4949 21.8372 27.7634 19.8755 27.7908 19.6552L27.794 19.6266C27.8023 19.5326 28.0001 17.3003 28.0001 15.0589V12.9637C27.9999 10.7224 27.8023 8.49002 27.794 8.39603ZM26.3591 15.0589C26.3591 17.1334 26.1779 19.2699 26.1608 19.466C26.0912 20.0062 25.8081 21.2474 25.3559 21.7389C24.6586 22.506 23.9423 22.5821 23.4194 22.6374C23.3562 22.644 23.2976 22.6505 23.2447 22.6571C19.6644 22.916 14.2851 22.9557 14.0373 22.9572C13.7594 22.9532 7.15634 22.8521 5.08421 22.6596C4.97804 22.6423 4.86332 22.6291 4.74241 22.6154C4.1291 22.5451 3.28957 22.449 2.644 21.7389L2.62883 21.7227C2.1845 21.2598 1.90957 20.0992 1.83971 19.4724C1.82668 19.3241 1.64083 17.1625 1.64083 15.0589V12.9637C1.64083 10.8916 1.82156 8.75748 1.83907 8.55731C1.92217 7.92093 2.21056 6.75497 2.644 6.28372C3.36263 5.49332 4.12035 5.40573 4.6215 5.34784C4.66935 5.34229 4.714 5.33716 4.75523 5.33182C8.38766 5.07162 13.8055 5.03296 13.9999 5.03146C14.1943 5.03275 19.6103 5.07162 23.2105 5.33182C23.2547 5.33737 23.303 5.34293 23.3549 5.34891C23.8704 5.40765 24.6494 5.49652 25.3644 6.25916L25.3711 6.2662C25.8154 6.72913 26.0903 7.91003 26.1602 8.54941C26.1726 8.68933 26.3591 10.8557 26.3591 12.9637V15.0589Z"
+                                        fill="#FBC471" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="28" height="28" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a><a class="f-socials__item" href="#"><svg width="28" height="28" viewBox="0 0 28 28"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.4206 0H7.57933C3.40002 0 0 3.40002 0 7.57933V20.4208C0 24.5999 3.40002 27.9999 7.57933 27.9999H20.4208C24.5999 27.9999 27.9999 24.5999 27.9999 20.4208V7.57933C27.9999 3.40002 24.5999 0 20.4206 0V0ZM26.3585 20.4208C26.3585 23.6948 23.6948 26.3585 20.4206 26.3585H7.57933C4.30514 26.3585 1.64148 23.6948 1.64148 20.4208V7.57933C1.64148 4.30514 4.30514 1.64148 7.57933 1.64148H20.4208C23.6948 1.64148 26.3585 4.30514 26.3585 7.57933V20.4208Z"
+                                    fill="#FBC471" />
+                                <path
+                                    d="M14 6.34375C9.77837 6.34375 6.34396 9.77816 6.34396 13.9998C6.34396 18.2214 9.77837 21.6558 14 21.6558C18.2216 21.6558 21.656 18.2214 21.656 13.9998C21.656 9.77816 18.2216 6.34375 14 6.34375ZM14 20.0143C10.6837 20.0143 7.98544 17.3163 7.98544 13.9998C7.98544 10.6835 10.6837 7.98523 14 7.98523C17.3165 7.98523 20.0145 10.6835 20.0145 13.9998C20.0145 17.3163 17.3165 20.0143 14 20.0143Z"
+                                    fill="#FBC471" />
+                                <path
+                                    d="M21.8391 3.62598C20.5915 3.62598 19.5768 4.6409 19.5768 5.88824C19.5768 7.1358 20.5915 8.15072 21.8391 8.15072C23.0866 8.15072 24.1015 7.1358 24.1015 5.88824C24.1015 4.64068 23.0866 3.62598 21.8391 3.62598ZM21.8391 6.50903C21.4968 6.50903 21.2183 6.23046 21.2183 5.88824C21.2183 5.5458 21.4968 5.26745 21.8391 5.26745C22.1815 5.26745 22.4601 5.5458 22.4601 5.88824C22.4601 6.23046 22.1815 6.50903 21.8391 6.50903Z"
+                                    fill="#FBC471" />
+                            </svg>
+                        </a><a class="f-socials__item" href="#"><svg width="28" height="28" viewBox="0 0 28 28"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <path
+                                        d="M15.8904 27.9453H11.3977C10.6473 27.9453 10.0368 27.3361 10.0368 26.5871V16.4733H7.41567C6.66524 16.4733 6.05479 15.8639 6.05479 15.1151V10.7813C6.05479 10.0324 6.66524 9.42313 7.41567 9.42313H10.0368V7.25293C10.0368 5.10111 10.7138 3.27036 11.9944 1.95892C13.2808 0.64151 15.0786 -0.0546875 17.1933 -0.0546875L20.6196 -0.0491333C21.3688 -0.0478516 21.9782 0.561401 21.9782 1.30908V5.33289C21.9782 6.08185 21.3679 6.6911 20.6177 6.6911L18.3108 6.69196C17.6072 6.69196 17.4281 6.83273 17.3898 6.87589C17.3266 6.94745 17.2515 7.14975 17.2515 7.70837V9.42291H20.4444C20.6847 9.42291 20.9176 9.48209 21.1177 9.5936C21.5494 9.83435 21.8179 10.2896 21.8179 10.7816L21.8161 15.1153C21.8161 15.8639 21.2057 16.4731 20.4553 16.4731H17.2515V26.5871C17.2515 27.3361 16.6408 27.9453 15.8904 27.9453ZM11.6815 26.3038H15.6066V15.7385C15.6066 15.2384 16.0143 14.8316 16.5152 14.8316H20.1714L20.1729 11.0646H16.515C16.0141 11.0646 15.6066 10.6579 15.6066 10.1578V7.70837C15.6066 7.06708 15.6719 6.33777 16.1569 5.78961C16.7429 5.12695 17.6665 5.05048 18.3104 5.05048L20.3335 5.04962V1.59192L17.192 1.58679C13.7935 1.58679 11.6815 3.75806 11.6815 7.25293V10.1578C11.6815 10.6577 11.274 11.0646 10.7731 11.0646H7.69949V14.8316H10.7731C11.274 14.8316 11.6815 15.2384 11.6815 15.7385V26.3038ZM20.6164 1.59235H20.6167H20.6164Z"
+                                        fill="#FBC471" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="28" height="28" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a></div>
+                    <div class="footer__info f-info">
+                        <div class="f-info__item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3.33333 2.5C2.8725 2.5 2.5 2.8725 2.5 3.33333C2.5 11.1567 8.84333 17.5 16.6667 17.5C17.1275 17.5 17.5 17.1275 17.5 16.6667V13.75C17.5 13.29 17.1275 12.9175 16.6667 12.9175C15.6267 12.9175 14.6267 12.75 13.69 12.4433C13.6067 12.4167 13.5192 12.4033 13.4325 12.4033C13.22 12.4033 13.0067 12.485 12.8442 12.6475L11.01 14.4833C8.65 13.2833 6.72083 11.3542 5.51917 8.995L7.3525 7.15583C7.58167 6.9275 7.64917 6.59833 7.55667 6.31C7.25 5.3725 7.0825 4.3725 7.0825 3.33333C7.0825 2.8725 6.71 2.5 6.25 2.5H3.33333Z"
+                                    fill="#FBC471" />
+                            </svg>
+                            <a href="tel:+375291670506">+375 29 167-05-06</a>
+                        </div>
+                        <div class="f-info__item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.0005 1.6665C6.75033 1.6665 4.16687 4.24996 4.16687 7.50012C4.16687 11.8337 10.0005 18.334 10.0005 18.334C10.0005 18.334 15.8341 11.917 15.8341 7.50012C15.8341 4.24996 13.2506 1.6665 10.0005 1.6665ZM10.0005 9.5838C8.83376 9.5838 7.91705 8.66709 7.91705 7.50037C7.91705 6.33364 8.83376 5.41693 10.0005 5.41693C11.1672 5.41693 12.0839 6.33364 12.0839 7.50037C12.0839 8.66709 11.1672 9.5838 10.0005 9.5838Z"
+                                    fill="#FBC471" />
+                            </svg>
+                            <span>г. Минск, ул Некрасова, 7, офис 414</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__copyrights"><span>ООО «АРТВОКАЛ» | 2020</span><span>Копирование материалов с сайта
+                        запрещено!</span></div><a class="footer__dev" href="#" target="_blank"><img src="img/Orbos.svg"
+                        alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <div class="hidden">
+        <div class="modal-window" id="news">
+            <div class="modal-window__content">
+                <div class="modal-window__title">Подписка на новости</div>
+                <div class="modal-window__form">
+                    <form class="m-form">
+                        <div class="m-form__input">
+                            <input type="text" placeholder="Как к Вам обращаться? Укажите Ваше имя...">
+                        </div>
+                        <div class="m-form__input">
+                            <input type="mail" placeholder="Оставьте Ваш e-mail адрес...">
+                        </div>
+                        <button class="m-btn" type="submit">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-window__close popup-close"></div>
+        </div>
+        <div class="modal-window" id="feedback">
+            <div class="modal-window__content">
+                <div class="modal-window__title">Обратная связь</div>
+                <div class="modal-window__form">
+                    <form class="m-form">
+                        <div class="m-form__input">
+                            <input type="text" placeholder="Как к Вам обращаться? Укажите Ваше имя...">
+                        </div>
+                        <div class="m-form__input">
+                            <input type="tel" placeholder="Укажите Ваш контактный телефон...">
+                        </div>
+                        <div class="m-form__input">
+                            <input type="mail" placeholder="Оставьте Ваш e-mail адрес...">
+                        </div>
+                        <textarea rows="6" placeholder="Сообщение..."></textarea>
+                        <button class="m-btn" type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-window__close popup-close"></div>
+        </div>
+        <div class="modal-window" id="order">
+            <div class="modal-window__content">
+                <div class="modal-window__title">Запись на прослушивание</div>
+                <div class="modal-window__form">
+                    <form class="m-form">
+                        <div class="m-form__input">
+                            <input type="text" placeholder="Как к Вам обращаться? Укажите Ваше имя...">
+                        </div>
+                        <div class="m-form__input">
+                            <input type="tel" placeholder="Укажите Ваш контактный телефон...">
+                        </div><span>Предпочитаемое время для звонка:</span>
+                        <div class="polzunok">
+                            <div class="start">9:00</div>
+                            <div class="end">21:00</div>
+                        </div>
+                        <div class="m-form__input">
+                            <div class="m-form__list">
+                                <div class="value">Выберете программу обучения</div>
+                                <input type="hidden" name="prog" id="prog">
+                                <div class="icon"><svg width="18" height="15" viewBox="0 0 18 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 15L0.339743 1.63133e-06L17.6603 1.17124e-07L9 15Z" fill="#FBC471" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                            <div class="m-form__droplist">
+                                <div class="item">Программа 1</div>
+                                <div class="item">Программа 2</div>
+                                <div class="item">Программа 3</div>
+                                <div class="item">Программа 4</div>
+                                <div class="item">Программа 5</div>
+                                <div class="item">Программа 6</div>
+                            </div>
+                        </div>
+                        <div class="m-form__wrap">
+                            <div class="m-form__input">
+                                <input type="text" placeholder="Имя ребенка">
+                            </div>
+                            <div class="m-form__input">
+                                <input type="text" placeholder="Возраст ребенка">
+                            </div>
+                        </div>
+                        <button class="m-btn" type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-window__close popup-close"></div>
+        </div>
+    </div>
+    <script type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
